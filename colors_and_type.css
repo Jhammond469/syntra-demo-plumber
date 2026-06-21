@@ -1,0 +1,72 @@
+/* ============================================================
+   colors_and_type.css — [COMPANY NAME] Plumbing
+   Shared design tokens — link before all other stylesheets
+   ============================================================ */
+
+:root {
+  /* Brand */
+  --c-primary:          #003566;
+  --c-primary-dark:     #002147;
+  --c-secondary:        #F77F00;
+  --c-secondary-dark:   #D96A00;
+  --c-accent:           #00B4D8;
+
+  /* Text */
+  --c-ink:              #1A1A2E;
+  --c-body:             #555555;
+  --c-muted:            #888888;
+  --c-on-dark:          #ffffff;
+  --c-star:             #FFD000;
+
+  /* Surfaces */
+  --c-canvas:           #ffffff;
+  --c-surface-soft:     #f0f4f8;
+  --c-dark:             #003566;
+  --c-dark-deep:        #002147;
+
+  /* Borders */
+  --c-hairline:         #e8eef4;
+  --c-hairline-strong:  #ccdce8;
+
+  /* Typography */
+  --ff-display: 'Montserrat', Helvetica, Arial, sans-serif;
+  --ff-body:    'Open Sans', Arial, sans-serif;
+
+  /* Font sizes */
+  --fs-hero:      clamp(40px, 6vw, 72px);
+  --fs-h1:        32px;
+  --fs-h2:        28px;
+  --fs-h3:        22px;
+  --fs-h4:        18px;
+  --fs-h5:        16px;
+  --fs-body:      15px;
+  --fs-body-lg:   17px;
+  --fs-caption:   13px;
+
+  /* Spacing */
+  --space-xs:      8px;
+  --space-sm:      16px;
+  --space-md:      24px;
+  --space-lg:      40px;
+  --space-xl:      64px;
+  --space-section: 88px;
+
+  /* Layout */
+  --maxw:      1100px;
+  --page-pad:  clamp(20px, 5vw, 48px);
+  --nav-h:     76px;
+
+  /* Radius */
+  --r-btn:  3px;
+  --r-card: 6px;
+  --r-full: 9999px;
+
+  /* Shadow */
+  --shadow-card: 0 2px 16px rgba(0,53,102,0.10);
+  --shadow-lift: 0 8px 32px rgba(0,53,102,0.14);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.2, 0.7, 0.3, 1);
+  --dur-fast: 150ms;
+  --dur-base: 260ms;
+}
