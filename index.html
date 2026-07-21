@@ -168,7 +168,7 @@
     /* ── STATS BAR ── */
     .stats { background: var(--c-secondary); padding: 0; }
     .stats-grid {
-      display: grid; grid-template-columns: repeat(4, 1fr);
+      display: grid; grid-template-columns: repeat(2, 1fr);
       border-left: 1px solid rgba(255,255,255,0.25);
     }
     .stat {
@@ -186,7 +186,7 @@
       color: rgba(255,255,255,0.80); margin-top: 6px; display: block;
     }
     @media (max-width: 600px) {
-      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .stats-grid { grid-template-columns: repeat(1, 1fr); }
     }
 
     /* ── SERVICES ── */
@@ -461,9 +461,8 @@
   <!-- TOP BAR -->
   <div class="topbar">
     <div class="inner topbar-inner">
-      <span class="topbar-left">Licensed Plumber · ABN [ABN] · Servicing [SERVICE AREAS]</span>
+      <span class="topbar-left">Licensed Plumber · Servicing [SERVICE AREAS]</span>
       <div class="topbar-right">
-        <a href="mailto:[EMAIL ADDRESS]">[EMAIL ADDRESS]</a>
         <a href="tel:[PHONE NUMBER]"><strong>[PHONE NUMBER]</strong></a>
       </div>
     </div>
@@ -506,7 +505,7 @@
         Licensed &amp; Insured · [SERVICE AREAS]
       </div>
       <h1 class="hero-headline">
-        Fast, Reliable Plumbing<br /><em>[SERVICE AREAS].</em>
+        Fast, Reliable Plumbing<br /><em>in [SUBURB].</em>
       </h1>
       <p class="hero-sub">
         Emergency callouts. Hot water systems. Blocked drains. Gas fitting.
@@ -531,18 +530,10 @@
     <div class="inner">
       <div class="stats-grid">
         <div class="stat fade-up d1">
-          <span class="stat-num" data-target="[X]">0</span><span class="stat-suffix">+</span>
-          <span class="stat-label">Jobs Completed</span>
-        </div>
-        <div class="stat fade-up d2">
-          <span class="stat-num" data-target="[X]">0</span>
-          <span class="stat-label">Years Experience</span>
-        </div>
-        <div class="stat fade-up d3">
           <span class="stat-num" data-target="98">0</span><span class="stat-suffix">%</span>
           <span class="stat-label">5-Star Reviews</span>
         </div>
-        <div class="stat fade-up d4">
+        <div class="stat fade-up d2">
           <span class="stat-num" data-target="60">0</span><span class="stat-suffix">min</span>
           <span class="stat-label">Emergency Response</span>
         </div>
@@ -640,7 +631,7 @@
           <span class="section-label fade-up">Why Choose Us</span>
           <h2 class="section-title fade-up d1">Brisbane's Plumber That Actually Shows Up</h2>
           <p style="font-size:var(--fs-body-lg);line-height:1.65;color:var(--c-body);margin-bottom:8px;" class="fade-up d2">
-            [CONTACT NAME] has been fixing [SERVICE AREAS]'s plumbing problems for [X] years.
+            [COMPANY NAME] knows [SERVICE AREAS] plumbing inside and out.
             We're local, fully licensed, and we stand behind every job.
           </p>
           <div class="why-list">
@@ -677,7 +668,7 @@
               </div>
               <div>
                 <h4>Workmanship Guarantee</h4>
-                <p>All work backed by our [X]-year workmanship guarantee. We fix it right the first time.</p>
+                <p>All work backed by our workmanship guarantee. We fix it right the first time.</p>
               </div>
             </div>
           </div>
@@ -733,12 +724,12 @@
       <div class="testimonials-grid">
         <div class="review-card d1">
           <div class="review-stars">★★★★★</div>
-          <p class="review-text">"Called at 7am with a burst pipe — [CONTACT NAME] was on-site within 45 minutes. Had it fixed and cleaned up before I had to leave for work. Absolute legend."</p>
+          <p class="review-text">"Called at 7am with a burst pipe — their team was on-site within 45 minutes. Had it fixed and cleaned up before I had to leave for work. Absolute legend."</p>
           <div class="reviewer">
             <div class="reviewer-avatar">S</div>
             <div>
-              <div class="reviewer-name">[REVIEWER NAME]</div>
-              <div class="reviewer-loc">[SUBURB], QLD</div>
+              <div class="reviewer-name">Sarah M.</div>
+              <div class="reviewer-loc">[SUBURB], [STATE]</div>
             </div>
           </div>
         </div>
@@ -748,8 +739,8 @@
           <div class="reviewer">
             <div class="reviewer-avatar">M</div>
             <div>
-              <div class="reviewer-name">[REVIEWER NAME]</div>
-              <div class="reviewer-loc">[SUBURB], QLD</div>
+              <div class="reviewer-name">Mark D.</div>
+              <div class="reviewer-loc">[SUBURB], [STATE]</div>
             </div>
           </div>
         </div>
@@ -759,8 +750,8 @@
           <div class="reviewer">
             <div class="reviewer-avatar">T</div>
             <div>
-              <div class="reviewer-name">[REVIEWER NAME]</div>
-              <div class="reviewer-loc">[SUBURB], QLD</div>
+              <div class="reviewer-name">Tom R.</div>
+              <div class="reviewer-loc">[SUBURB], [STATE]</div>
             </div>
           </div>
         </div>
@@ -796,12 +787,6 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.06 6.06l.94-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             </div>
             <div><strong>Phone</strong><span>[PHONE NUMBER]</span></div>
-          </div>
-          <div class="contact-detail fade-up d3">
-            <div class="contact-detail-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            </div>
-            <div><strong>Email</strong><span>[EMAIL ADDRESS]</span></div>
           </div>
           <div class="contact-detail fade-up d4">
             <div class="contact-detail-icon">
@@ -881,19 +866,75 @@
           <h4>Contact</h4>
           <ul>
             <li><a href="tel:[PHONE NUMBER]">[PHONE NUMBER]</a></li>
-            <li><a href="mailto:[EMAIL ADDRESS]">[EMAIL ADDRESS]</a></li>
-            <li><a href="[INSTAGRAM URL]">Instagram</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="inner footer-bottom-inner">
-        <span>© 2026 [COMPANY NAME]. All rights reserved. ABN [ABN].</span>
+        <span>© 2026 [COMPANY NAME]. All rights reserved.</span>
         <span>Website by <a href="https://syntrasoftware.com" style="color:var(--c-secondary);">Syntra Software</a></span>
       </div>
     </div>
   </footer>
+
+  <!-- Personalisation — fills in the real lead's business details from URL params
+       (?name=&suburb=&state=&phone=&reviews=). Runs first, via a TreeWalker over
+       text nodes rather than innerHTML, so it never touches the script below and
+       can't accidentally strip its event listeners. -->
+  <script>
+  (function () {
+    'use strict';
+
+    var params = new URLSearchParams(window.location.search);
+    var name = params.get('name') || 'Your Business';
+    var suburb = params.get('suburb') || 'Brisbane';
+    var state = params.get('state') || 'QLD';
+    var phone = params.get('phone') || '';
+    var reviews = params.get('reviews') || '';
+    var serviceAreas = suburb + ' & surrounding suburbs';
+    var phoneDisplay = phone || 'Enquire Now';
+
+    function splitName(n) {
+      var words = n.trim().split(/\s+/);
+      if (words.length === 1) return '<span>' + words[0] + '</span>';
+      return words.slice(0, -1).join(' ') + ' <span>' + words[words.length - 1] + '</span>';
+    }
+
+    document.querySelectorAll('.nav-logo, .footer-logo').forEach(function (el) {
+      el.innerHTML = splitName(name);
+    });
+
+    function applyText(str) {
+      return str
+        .split('Call [PHONE NUMBER]').join(phone ? 'Call ' + phone : 'Get a Free Quote')
+        .split('[PHONE NUMBER]').join(phoneDisplay)
+        .split('[X]+ Google Reviews').join(reviews ? reviews + '+ Google Reviews' : 'Google Reviews')
+        .split('[COMPANY NAME]').join(name)
+        .split('[SUBURB] & [SERVICE AREAS]').join(serviceAreas) // avoid "Suburb & Suburb & surrounding suburbs"
+        .split('[SERVICE AREAS]').join(serviceAreas)
+        .split('[SUBURB]').join(suburb)
+        .split('[STATE]').join(state);
+    }
+
+    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null);
+    var node;
+    while ((node = walker.nextNode())) {
+      if (node.parentNode && node.parentNode.tagName === 'SCRIPT') continue;
+      if (node.nodeValue.indexOf('[') === -1) continue;
+      node.nodeValue = applyText(node.nodeValue);
+    }
+
+    document.querySelectorAll('a[href*="[PHONE NUMBER]"]').forEach(function (a) {
+      a.setAttribute('href', phone ? 'tel:' + phone.replace(/[^\d+]/g, '') : '#contact');
+    });
+
+    document.title = applyText(document.title);
+    document.querySelectorAll('meta[name="description"], meta[property="og:title"], meta[property="og:description"]').forEach(function (m) {
+      m.setAttribute('content', applyText(m.getAttribute('content')));
+    });
+  })();
+  </script>
 
   <script>
   (function () {
