@@ -22,10 +22,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>[COMPANY NAME] | Plumber [SUBURB] & [SERVICE AREAS]</title>
-  <meta name="description" content="[COMPANY NAME] — licensed plumber servicing [SERVICE AREAS]. Emergency plumbing, hot water, blocked drains & gas fitting. Call [PHONE NUMBER]." />
-  <meta property="og:title" content="[COMPANY NAME] | Plumber [SERVICE AREAS]" />
-  <meta property="og:description" content="Fast, reliable plumbing across [SERVICE AREAS]. Emergency callouts available 24/7." />
+  <title>[COMPANY NAME] | [TRADE] [SUBURB] & [SERVICE AREAS]</title>
+  <meta name="description" content="[COMPANY NAME] — licensed [TRADE_LOWER] servicing [SERVICE AREAS]. [TRADE_SERVICE] done right. Call [PHONE NUMBER]." />
+  <meta property="og:title" content="[COMPANY NAME] | [TRADE] [SERVICE AREAS]" />
+  <meta property="og:description" content="Fast, reliable [TRADE_SERVICE_LOWER] across [SERVICE AREAS]. Emergency callouts available 24/7." />
   <meta property="og:image" content="hero.jpg" />
   <meta property="og:url" content="https://[DOMAIN].com.au" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -461,7 +461,7 @@
   <!-- TOP BAR -->
   <div class="topbar">
     <div class="inner topbar-inner">
-      <span class="topbar-left">Licensed Plumber · Servicing [SERVICE AREAS]</span>
+      <span class="topbar-left">Licensed [TRADE] · Servicing [SERVICE AREAS]</span>
       <div class="topbar-right">
         <a href="tel:[PHONE NUMBER]"><strong>[PHONE NUMBER]</strong></a>
       </div>
@@ -497,7 +497,7 @@
 
   <!-- HERO -->
   <section class="hero" id="hero">
-    <div class="hero-photo" id="heroPhoto" aria-label="Plumber working on-site"></div>
+    <div class="hero-photo" id="heroPhoto" aria-label="[TRADE] working on-site"></div>
     <div class="hero-overlay"></div>
     <div class="inner hero-inner">
       <div class="hero-badge">
@@ -505,10 +505,10 @@
         Licensed &amp; Insured · [SERVICE AREAS]
       </div>
       <h1 class="hero-headline">
-        Fast, Reliable Plumbing<br /><em>in [SUBURB].</em>
+        Fast, Reliable [TRADE_SERVICE]<br /><em>in [SUBURB].</em>
       </h1>
       <p class="hero-sub">
-        Emergency callouts. Hot water systems. Blocked drains. Gas fitting.
+        [HERO_SUB]
         No call-out fee on weekdays — we show up on time, every time.
       </p>
       <div class="hero-cta-block">
@@ -545,76 +545,76 @@
   <section class="services" id="services">
     <div class="inner">
       <span class="section-label fade-up">What We Do</span>
-      <h2 class="section-title fade-up d1">Plumbing Services Across [SERVICE AREAS]</h2>
+      <h2 class="section-title fade-up d1">[TRADE_SERVICE] Services Across [SERVICE AREAS]</h2>
       <p class="section-sub fade-up d2">
-        From emergency burst pipes to full bathroom renovations —
+        From urgent callouts to full renovations —
         fully licensed, insured, and backed by a workmanship guarantee.
       </p>
       <div class="services-grid">
 
         <div class="service-card fade-up d1">
           <!-- REPLACE: service photo — emergency plumber on site, burst pipe repair or drain work -->
-          <div class="service-card-bg" style="background-image:url('images/pexels-misbaa-eri-426041722-37252312.jpg')"></div>
+          <div class="service-card-bg" id="svcBg1" style="background-image:url('images/pexels-misbaa-eri-426041722-37252312.jpg')"></div>
           <div class="service-card-overlay"></div>
           <div class="service-card-body">
             <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
-            <h3>Emergency Plumbing</h3>
-            <p>Burst pipes, major leaks, gas emergencies — 24/7 fast response across [SERVICE AREAS]. No call-out fee on weekdays.</p>
+            <h3 data-svc-title="1">Emergency Plumbing</h3>
+            <p data-svc-desc="1">Burst pipes, major leaks, gas emergencies — 24/7 fast response across [SERVICE AREAS]. No call-out fee on weekdays.</p>
           </div>
         </div>
 
         <div class="service-card fade-up d2">
           <!-- REPLACE: service photo — hot water unit installed, tank or heat pump on wall -->
-          <div class="service-card-bg" style="background-image:url('images/pexels-ian-panelo-4494653.jpg')"></div>
+          <div class="service-card-bg" id="svcBg2" style="background-image:url('images/pexels-ian-panelo-4494653.jpg')"></div>
           <div class="service-card-overlay"></div>
           <div class="service-card-body">
             <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M12 2a6 6 0 0 1 6 6v4a6 6 0 0 1-12 0V8a6 6 0 0 1 6-6z"/><path d="M6 12H2m20 0h-4"/></svg></div>
-            <h3>Hot Water Systems</h3>
-            <p>Supply, installation, and repairs — electric, gas, solar, and heat pump. Same-day service available.</p>
+            <h3 data-svc-title="2">Hot Water Systems</h3>
+            <p data-svc-desc="2">Supply, installation, and repairs — electric, gas, solar, and heat pump. Same-day service available.</p>
           </div>
         </div>
 
         <div class="service-card fade-up d3">
           <!-- REPLACE: service photo — drain jetting in progress or CCTV inspection -->
-          <div class="service-card-bg" style="background-image:url('images/pexels-jan-van-der-wolf-11680885-11658940.jpg')"></div>
+          <div class="service-card-bg" id="svcBg3" style="background-image:url('images/pexels-jan-van-der-wolf-11680885-11658940.jpg')"></div>
           <div class="service-card-overlay"></div>
           <div class="service-card-body">
             <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M7 16a4 4 0 0 1-.88-7.903A5 5 0 1 1 15.9 6L16 6a5 5 0 0 1 1 9.9"/><path d="M9 19l3 3 3-3"/><path d="M12 12v8"/></svg></div>
-            <h3>Blocked Drains</h3>
-            <p>High-pressure jetting, CCTV inspections, root cutting. Fix the cause permanently — no repeat callouts.</p>
+            <h3 data-svc-title="3">Blocked Drains</h3>
+            <p data-svc-desc="3">High-pressure jetting, CCTV inspections, root cutting. Fix the cause permanently — no repeat callouts.</p>
           </div>
         </div>
 
         <div class="service-card fade-up d1">
           <!-- REPLACE: service photo — new bathroom renovation plumbing rough-in or finished bathroom -->
-          <div class="service-card-bg" style="background-image:url('images/pexels-davidmcelwee-12191770.jpg')"></div>
+          <div class="service-card-bg" id="svcBg4" style="background-image:url('images/pexels-davidmcelwee-12191770.jpg')"></div>
           <div class="service-card-overlay"></div>
           <div class="service-card-body">
             <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M3 9h18M3 15h18M12 3v18"/></svg></div>
-            <h3>Bathroom Renovations</h3>
-            <p>Full re-plumbing for renovations and new builds. Coordinated with your tiler to keep the project on schedule.</p>
+            <h3 data-svc-title="4">Bathroom Renovations</h3>
+            <p data-svc-desc="4">Full re-plumbing for renovations and new builds. Coordinated with your tiler to keep the project on schedule.</p>
           </div>
         </div>
 
         <div class="service-card fade-up d2">
           <!-- REPLACE: service photo — gas fitting work, stove or BBQ connection, or visible pipework -->
-          <div class="service-card-bg" style="background-image:url('images/pexels-ninobur-16752780.jpg')"></div>
+          <div class="service-card-bg" id="svcBg5" style="background-image:url('images/pexels-ninobur-16752780.jpg')"></div>
           <div class="service-card-overlay"></div>
           <div class="service-card-body">
             <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M12 22V12m0 0V2m0 10H2m10 0h10"/></svg></div>
-            <h3>Gas Fitting</h3>
-            <p>Licensed gas fitting for BBQs, stoves, heaters, and new gas line installations. All work certified.</p>
+            <h3 data-svc-title="5">Gas Fitting</h3>
+            <p data-svc-desc="5">Licensed gas fitting for BBQs, stoves, heaters, and new gas line installations. All work certified.</p>
           </div>
         </div>
 
         <div class="service-card fade-up d3">
           <!-- REPLACE: service photo — new tap, sink, or toilet installation close-up -->
-          <div class="service-card-bg" style="background-image:url('images/pexels-robertkso-12018108.jpg')"></div>
+          <div class="service-card-bg" id="svcBg6" style="background-image:url('images/pexels-robertkso-12018108.jpg')"></div>
           <div class="service-card-overlay"></div>
           <div class="service-card-body">
             <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 12h8M12 8v8"/></svg></div>
-            <h3>New Installations</h3>
-            <p>Toilets, sinks, taps, dishwashers, washing machine connections. Quality fittings installed properly from day one.</p>
+            <h3 data-svc-title="6">New Installations</h3>
+            <p data-svc-desc="6">Toilets, sinks, taps, dishwashers, washing machine connections. Quality fittings installed properly from day one.</p>
           </div>
         </div>
 
@@ -626,12 +626,12 @@
   <section class="why-us" id="why-us">
     <div class="inner">
       <div class="why-grid">
-        <div class="why-photo" role="img" aria-label="Licensed plumber at work"></div>
+        <div class="why-photo" id="whyPhoto" role="img" aria-label="Licensed [TRADE_LOWER] at work"></div>
         <div>
           <span class="section-label fade-up">Why Choose Us</span>
-          <h2 class="section-title fade-up d1">Brisbane's Plumber That Actually Shows Up</h2>
+          <h2 class="section-title fade-up d1">[SUBURB]'s [TRADE] That Actually Shows Up</h2>
           <p style="font-size:var(--fs-body-lg);line-height:1.65;color:var(--c-body);margin-bottom:8px;" class="fade-up d2">
-            [COMPANY NAME] knows [SERVICE AREAS] plumbing inside and out.
+            [COMPANY NAME] knows [SERVICE AREAS] [TRADE_SERVICE_LOWER] inside and out.
             We're local, fully licensed, and we stand behind every job.
           </p>
           <div class="why-list">
@@ -650,7 +650,7 @@
               </div>
               <div>
                 <h4>Fully Licensed &amp; Insured</h4>
-                <p>QBCC licensed plumber and gas fitter. All work certified to Australian standards.</p>
+                <p>[LICENSE_LINE]</p>
               </div>
             </div>
             <div class="why-item fade-up d3">
@@ -680,7 +680,7 @@
   <!-- STATEMENT PHOTO -->
   <section class="statement-photo">
     <!-- REPLACE: statement photo — atmospheric wide shot, plumber on site or completed job. Min 1920×800. -->
-    <div class="statement-bg" style="background-image:url('images/pexels-sonny-29248902.jpg')"></div>
+    <div class="statement-bg" id="statementBg" style="background-image:url('images/pexels-sonny-29248902.jpg')"></div>
     <div class="statement-overlay"></div>
     <div class="inner statement-content">
       <p class="statement-text">Licensed. Reliable.<br><em>Fixed right</em> the first time.</p>
@@ -691,25 +691,25 @@
   <section class="gallery" id="gallery">
     <div class="inner">
       <span class="section-label fade-up">Our Work</span>
-      <h2 class="section-title fade-up d1">Recent Plumbing Jobs</h2>
-      <p class="section-sub fade-up d2">From emergency callouts to full bathroom fit-outs — see the quality we deliver on every job.</p>
+      <h2 class="section-title fade-up d1">Recent [TRADE_SERVICE] Jobs</h2>
+      <p class="section-sub fade-up d2">From emergency callouts to full renovations — see the quality we deliver on every job.</p>
       <div class="gallery-grid">
         <!-- REPLACE: gallery photo — hot water installation or emergency repair, wide shot -->
-        <div class="gallery-item"><img src="images/gal-1.jpg" alt="Hot water system installation" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/gal-1.jpg" id="galImg1" alt="Hot water system installation" loading="lazy" /></div>
         <!-- REPLACE: gallery photo — close-up bathroom renovation plumbing rough-in -->
-        <div class="gallery-item"><img src="images/gal-2.jpg" alt="Bathroom renovation plumbing" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/gal-2.jpg" id="galImg2" alt="Bathroom renovation plumbing" loading="lazy" /></div>
         <!-- REPLACE: gallery photo — blocked drain jetting or CCTV inspection -->
-        <div class="gallery-item"><img src="images/gal-3.jpg" alt="Blocked drain clearing" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/gal-3.jpg" id="galImg3" alt="Blocked drain clearing" loading="lazy" /></div>
         <!-- REPLACE: gallery photo — gas fitting, stove connection or outdoor BBQ line -->
-        <div class="gallery-item"><img src="images/gal-4.jpg" alt="Gas fitting installation" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/gal-4.jpg" id="galImg4" alt="Gas fitting installation" loading="lazy" /></div>
         <!-- REPLACE: gallery photo — new tap or toilet installation detail -->
-        <div class="gallery-item"><img src="images/gal-5.jpg" alt="Tap and sink installation" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/gal-5.jpg" id="galImg5" alt="Tap and sink installation" loading="lazy" /></div>
         <!-- REPLACE: gallery photo — wide finished bathroom or completed renovation, wide -->
-        <div class="gallery-item"><img src="images/gal-6.jpg" alt="Completed bathroom renovation" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/gal-6.jpg" id="galImg6" alt="Completed bathroom renovation" loading="lazy" /></div>
         <!-- REPLACE: gallery photo — outdoor work, storm water or sewer inspection -->
-        <div class="gallery-item"><img src="images/gal-7.jpg" alt="Outdoor plumbing work" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/gal-7.jpg" id="galImg7" alt="Outdoor plumbing work" loading="lazy" /></div>
         <!-- REPLACE: gallery photo — plumber with van or tools, team/brand shot -->
-        <div class="gallery-item"><img src="images/gal-8.jpg" alt="Licensed plumber, [SERVICE AREAS]" loading="lazy" /></div>
+        <div class="gallery-item"><img src="images/gal-8.jpg" id="galImg8" alt="Licensed plumber, [SERVICE AREAS]" loading="lazy" /></div>
       </div>
     </div>
   </section>
@@ -762,7 +762,7 @@
   <!-- CTA BANNER -->
   <section class="cta-banner">
     <div class="inner cta-inner">
-      <h2>Need a Plumber in [SERVICE AREAS]?</h2>
+      <h2>Need a [TRADE] in [SERVICE AREAS]?</h2>
       <p>Call now for a fast response — or send us a message and we'll get back to you within the hour.</p>
       <div class="cta-buttons">
         <a href="tel:[PHONE NUMBER]" class="btn btn-primary">Call [PHONE NUMBER]</a>
@@ -850,7 +850,7 @@
         <div class="footer-brand">
           <!-- REPLACE: logo — <img src="logo-white.png" alt="[COMPANY NAME]" height="36" style="margin-bottom:12px;" /> -->
           <div class="footer-logo">[COMPANY<span>NAME]</span></div>
-          <p>Licensed plumber servicing [SERVICE AREAS]. Emergency, residential, and commercial plumbing done right.</p>
+          <p>Licensed [TRADE_LOWER] servicing [SERVICE AREAS]. Emergency, residential, and commercial [TRADE_SERVICE_LOWER] done right.</p>
         </div>
         <div class="footer-col">
           <h4>Services</h4>
@@ -879,12 +879,191 @@
   </footer>
 
   <!-- Personalisation — fills in the real lead's business details from URL params
-       (?name=&suburb=&state=&phone=&reviews=). Runs first, via a TreeWalker over
-       text nodes rather than innerHTML, so it never touches the script below and
-       can't accidentally strip its event listeners. -->
+       (?name=&suburb=&state=&phone=&reviews=&trade=). Runs first, via a TreeWalker
+       over text nodes rather than innerHTML, so it never touches the script below
+       and can't accidentally strip its event listeners. Originally a single-trade
+       (plumber-only) template; extended 2026-07-27 to also cover electrician,
+       tiler, painter and plasterer via a TRADES lookup table, same pattern as
+       syntra-demo-construction. TRADES.plumber mirrors the original hardcoded
+       copy/images exactly, so existing links with no ?trade= param (or
+       ?trade=plumber) render pixel-identical to before this change. -->
   <script>
   (function () {
     'use strict';
+
+    var TRADES = {
+      plumber: {
+        heroSub: 'Emergency callouts. Hot water systems. Blocked drains. Gas fitting.',
+        label: 'Plumber',
+        service: 'Plumbing',
+        licenseLine: 'QBCC licensed plumber and gas fitter. All work certified to Australian standards.',
+        photos: {
+          hero: 'images/pexels-ahmetcotur-27626183.jpg',
+          why: 'images/about.jpg',
+          svc: [
+            'images/pexels-misbaa-eri-426041722-37252312.jpg',
+            'images/pexels-ian-panelo-4494653.jpg',
+            'images/pexels-jan-van-der-wolf-11680885-11658940.jpg',
+            'images/pexels-davidmcelwee-12191770.jpg',
+            'images/pexels-ninobur-16752780.jpg',
+            'images/pexels-robertkso-12018108.jpg'
+          ],
+          gal: ['images/gal-1.jpg','images/gal-2.jpg','images/gal-3.jpg','images/gal-4.jpg','images/gal-5.jpg','images/gal-6.jpg','images/gal-7.jpg','images/gal-8.jpg']
+        },
+        services: [
+          ['Emergency Plumbing', 'Burst pipes, major leaks, gas emergencies — 24/7 fast response across [SERVICE AREAS]. No call-out fee on weekdays.'],
+          ['Hot Water Systems', 'Supply, installation, and repairs — electric, gas, solar, and heat pump. Same-day service available.'],
+          ['Blocked Drains', 'High-pressure jetting, CCTV inspections, root cutting. Fix the cause permanently — no repeat callouts.'],
+          ['Bathroom Renovations', 'Full re-plumbing for renovations and new builds. Coordinated with your tiler to keep the project on schedule.'],
+          ['Gas Fitting', 'Licensed gas fitting for BBQs, stoves, heaters, and new gas line installations. All work certified.'],
+          ['New Installations', 'Toilets, sinks, taps, dishwashers, washing machine connections. Quality fittings installed properly from day one.']
+        ]
+      },
+      electrician: {
+        heroSub: 'Emergency callouts. Switchboard upgrades. Power points. Safety inspections.',
+        label: 'Electrician',
+        service: 'Electrical',
+        licenseLine: 'Licensed electrical contractor, all work compliant with AS/NZS wiring standards.',
+        photos: {
+          hero: 'https://images.pexels.com/photos/33694019/pexels-photo-33694019.jpeg?auto=compress&cs=tinysrgb&w=1600',
+          why: 'https://images.pexels.com/photos/28950842/pexels-photo-28950842.jpeg?auto=compress&cs=tinysrgb&w=900',
+          svc: [
+            'https://images.pexels.com/photos/17842834/pexels-photo-17842834.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/28950842/pexels-photo-28950842.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/4792521/pexels-photo-4792521.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/33694019/pexels-photo-33694019.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/37795219/pexels-photo-37795219.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/6804586/pexels-photo-6804586.jpeg?auto=compress&cs=tinysrgb&w=900'
+          ],
+          gal: [
+            'https://images.pexels.com/photos/33694019/pexels-photo-33694019.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/28950842/pexels-photo-28950842.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/17842834/pexels-photo-17842834.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/4792521/pexels-photo-4792521.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/37795219/pexels-photo-37795219.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/6804586/pexels-photo-6804586.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/33694019/pexels-photo-33694019.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/28950842/pexels-photo-28950842.jpeg?auto=compress&cs=tinysrgb&w=900'
+          ]
+        },
+        services: [
+          ['Emergency Electrical', '24/7 fault-finding, power outages, and safety switch trips — fast, safe response across [SERVICE AREAS].'],
+          ['Switchboard Upgrades', 'Old fuse box replacement, safety switch installation, and compliance upgrades to current standards.'],
+          ['Power Points & Lighting', 'New power points, downlights, and lighting circuits installed cleanly and to code.'],
+          ['Renovations & Rewiring', 'Full electrical rewiring and fit-outs coordinated with your renovation timeline.'],
+          ['Solar & EV Charging', 'Solar connections and EV charger installations for homes and businesses.'],
+          ['New Installations', 'Data cabling, NBN connections, and new circuit installations done properly from day one.']
+        ]
+      },
+      tiler: {
+        heroSub: 'Bathroom tiling. Kitchen splashbacks. Floor tiling. Waterproofing.',
+        label: 'Tiler',
+        service: 'Tiling',
+        licenseLine: 'Licensed tiler, all work compliant with Australian waterproofing standards.',
+        photos: {
+          hero: 'https://images.pexels.com/photos/29181495/pexels-photo-29181495.jpeg?auto=compress&cs=tinysrgb&w=1600',
+          why: 'https://images.pexels.com/photos/12924578/pexels-photo-12924578.jpeg?auto=compress&cs=tinysrgb&w=900',
+          svc: [
+            'https://images.pexels.com/photos/11806490/pexels-photo-11806490.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/9690090/pexels-photo-9690090.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/29181494/pexels-photo-29181494.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/11806477/pexels-photo-11806477.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/12924578/pexels-photo-12924578.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/29181495/pexels-photo-29181495.jpeg?auto=compress&cs=tinysrgb&w=900'
+          ],
+          gal: [
+            'https://images.pexels.com/photos/29181495/pexels-photo-29181495.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/11806490/pexels-photo-11806490.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/9690090/pexels-photo-9690090.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/29181494/pexels-photo-29181494.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/11806477/pexels-photo-11806477.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/12924578/pexels-photo-12924578.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/29181495/pexels-photo-29181495.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/9690090/pexels-photo-9690090.jpeg?auto=compress&cs=tinysrgb&w=900'
+          ]
+        },
+        services: [
+          ['Bathroom Tiling', 'Full bathroom tiling, waterproofed and finished to a clean, level standard.'],
+          ['Kitchen Splashbacks', 'Splashback tiling installed cleanly around benchtops, power points and cabinetry.'],
+          ['Floor Tiling', 'Living areas, hallways and outdoor floors tiled to last, laid dead level.'],
+          ['Waterproofing', 'Certified waterproofing for wet areas — compliant, tested, and guaranteed.'],
+          ['Outdoor & Alfresco', 'Slip-rated outdoor tiling for patios, alfresco areas and pool surrounds.'],
+          ['New Installations', 'New builds and renovations — tiling coordinated with your other trades.']
+        ]
+      },
+      painter: {
+        heroSub: 'Interior painting. Exterior painting. Feature walls. Commercial jobs.',
+        label: 'Painter',
+        service: 'Painting',
+        licenseLine: 'Fully licensed and insured painting contractor.',
+        photos: {
+          hero: 'https://images.pexels.com/photos/7218579/pexels-photo-7218579.jpeg?auto=compress&cs=tinysrgb&w=1600',
+          why: 'https://images.pexels.com/photos/1669754/pexels-photo-1669754.jpeg?auto=compress&cs=tinysrgb&w=900',
+          svc: [
+            'https://images.pexels.com/photos/1669754/pexels-photo-1669754.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/6474199/pexels-photo-6474199.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/6474305/pexels-photo-6474305.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/5853925/pexels-photo-5853925.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/6474196/pexels-photo-6474196.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/7218579/pexels-photo-7218579.jpeg?auto=compress&cs=tinysrgb&w=900'
+          ],
+          gal: [
+            'https://images.pexels.com/photos/7218579/pexels-photo-7218579.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/1669754/pexels-photo-1669754.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/6474199/pexels-photo-6474199.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/6474305/pexels-photo-6474305.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/5853925/pexels-photo-5853925.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/6474196/pexels-photo-6474196.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/7218579/pexels-photo-7218579.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/1669754/pexels-photo-1669754.jpeg?auto=compress&cs=tinysrgb&w=900'
+          ]
+        },
+        services: [
+          ['Interior Painting', 'Walls, ceilings and trim painted clean, with proper prep and premium paint.'],
+          ['Exterior Painting', 'Weatherproof exterior painting that protects your home and lifts its street appeal.'],
+          ['Feature Walls', 'Feature walls and accent finishes done with a sharp, clean edge.'],
+          ['Commercial Painting', 'Offices, shopfronts and rentals painted with minimal disruption to your business.'],
+          ['Roof & Fence Painting', 'Roof restoration coatings and fence painting to protect and refresh.'],
+          ['New Installations', 'Full colour consultation and new-build painting from first coat to final finish.']
+        ]
+      },
+      plasterer: {
+        heroSub: 'Wall plastering. Ceiling repairs. Skim coating. Patch and repair.',
+        label: 'Plasterer',
+        service: 'Plastering',
+        licenseLine: 'Licensed plasterer, all work to Australian building standards.',
+        photos: {
+          hero: 'https://images.pexels.com/photos/5493658/pexels-photo-5493658.jpeg?auto=compress&cs=tinysrgb&w=1600',
+          why: 'https://images.pexels.com/photos/5691596/pexels-photo-5691596.jpeg?auto=compress&cs=tinysrgb&w=900',
+          svc: [
+            'https://images.pexels.com/photos/5691596/pexels-photo-5691596.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/5691622/pexels-photo-5691622.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/6474129/pexels-photo-6474129.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/36035072/pexels-photo-36035072.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/5493658/pexels-photo-5493658.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/5691596/pexels-photo-5691596.jpeg?auto=compress&cs=tinysrgb&w=900'
+          ],
+          gal: [
+            'https://images.pexels.com/photos/5493658/pexels-photo-5493658.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/5691596/pexels-photo-5691596.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/5691622/pexels-photo-5691622.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/6474129/pexels-photo-6474129.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/36035072/pexels-photo-36035072.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/5493658/pexels-photo-5493658.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/5691596/pexels-photo-5691596.jpeg?auto=compress&cs=tinysrgb&w=900',
+            'https://images.pexels.com/photos/5691622/pexels-photo-5691622.jpeg?auto=compress&cs=tinysrgb&w=900'
+          ]
+        },
+        services: [
+          ['Wall Plastering', 'Solid plastering for new walls and full-room re-plasters, finished dead flat.'],
+          ['Skim Coating', 'Skim coats over old or damaged surfaces for a smooth, paint-ready finish.'],
+          ['Ceiling Repairs', 'Ceiling patching, crack repairs, and water-damage restoration.'],
+          ['Renovations', 'Plastering coordinated with your renovation timeline, start to finish.'],
+          ['Patch & Repair', 'Fast, clean patch repairs that blend seamlessly into existing walls.'],
+          ['New Installations', 'New-build plastering and ceiling installation from frame stage onward.']
+        ]
+      }
+    };
 
     var params = new URLSearchParams(window.location.search);
     var name = params.get('name') || 'Your Business';
@@ -892,6 +1071,8 @@
     var state = params.get('state') || 'QLD';
     var phone = params.get('phone') || '';
     var reviews = params.get('reviews') || '';
+    var tradeKey = (params.get('trade') || 'plumber').toLowerCase();
+    var trade = TRADES[tradeKey] || TRADES.plumber;
     var serviceAreas = suburb + ' & surrounding suburbs';
     var phoneDisplay = phone || 'Enquire Now';
 
@@ -905,6 +1086,32 @@
       el.innerHTML = splitName(name);
     });
 
+    // Trade-specific images
+    var heroPhoto = document.getElementById('heroPhoto');
+    if (heroPhoto) heroPhoto.style.background = "url('" + trade.photos.hero + "') center/cover no-repeat";
+    var whyPhoto = document.getElementById('whyPhoto');
+    if (whyPhoto) whyPhoto.style.background = "url('" + trade.photos.why + "') center/cover";
+    var statementBg = document.getElementById('statementBg');
+    if (statementBg) statementBg.style.backgroundImage = "url('" + trade.photos.hero + "')";
+    trade.photos.svc.forEach(function (url, i) {
+      var el = document.getElementById('svcBg' + (i + 1));
+      if (el) el.style.backgroundImage = "url('" + url + "')";
+    });
+    trade.photos.gal.forEach(function (url, i) {
+      var el = document.getElementById('galImg' + (i + 1));
+      if (el) el.setAttribute('src', url);
+    });
+
+    // Trade-specific service titles/descriptions
+    document.querySelectorAll('[data-svc-title]').forEach(function (el) {
+      var i = parseInt(el.getAttribute('data-svc-title'), 10) - 1;
+      if (trade.services[i]) el.textContent = trade.services[i][0];
+    });
+    document.querySelectorAll('[data-svc-desc]').forEach(function (el) {
+      var i = parseInt(el.getAttribute('data-svc-desc'), 10) - 1;
+      if (trade.services[i]) el.textContent = trade.services[i][1];
+    });
+
     function applyText(str) {
       return str
         .split('Call [PHONE NUMBER]').join(phone ? 'Call ' + phone : 'Get a Free Quote')
@@ -914,7 +1121,13 @@
         .split('[SUBURB] & [SERVICE AREAS]').join(serviceAreas) // avoid "Suburb & Suburb & surrounding suburbs"
         .split('[SERVICE AREAS]').join(serviceAreas)
         .split('[SUBURB]').join(suburb)
-        .split('[STATE]').join(state);
+        .split('[STATE]').join(state)
+        .split('[TRADE_SERVICE_LOWER]').join(trade.service.toLowerCase())
+        .split('[TRADE_SERVICE]').join(trade.service)
+        .split('[TRADE_LOWER]').join(trade.label.toLowerCase())
+        .split('[TRADE]').join(trade.label)
+        .split('[LICENSE_LINE]').join(trade.licenseLine)
+        .split('[HERO_SUB]').join(trade.heroSub);
     }
 
     var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null);
